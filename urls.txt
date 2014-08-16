@@ -1,2 +1,4 @@
 http://www.r-bloggers.com/using-r-barplot-with-ggplot2/
+#ggplot2 options: how to remove legend
++guides(fill=FALSE) ##http://www.cookbook-r.com/Graphs/Legends_(ggplot2)/
 

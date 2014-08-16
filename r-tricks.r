@@ -10,3 +10,10 @@ sapply(iris,class)
 
 # Calculate sum of Sepal.Width for all Species
 tapply(iris$Sepal.Width,iris$Species, sum)
+
+library(ggplot2)
+ 
+qplot(x=as.factor(year), y=Emissions, facets= .~ city,fill=city,
+                       data=bothNEI, geom="bar", stat="identity",
+                       position="dodge")+
+                       labs(title="Motor Vehicle Emissions in Baltimore and LA\n")

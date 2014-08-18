@@ -6,7 +6,8 @@ table(x$a, x$b, useNA="ifany") #to include NA values in the count
 any(is.na(x$a))
 
 attach(iris)
-by(iris[,2:3], Species, colSums)
+by(iris[,-5], Species, colSums)
+tapply(iris$Sepal.Length, Species, sum)
 
 # Get the class of all the variables of iris dataset
 sapply(iris,class)

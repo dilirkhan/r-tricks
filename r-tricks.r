@@ -1,4 +1,4 @@
-
+aggregate(data=iris, cbind(Sepal.Length,Sepal.Width)~Species,FUN=mean)
 table(x$a, x$b, useNA="ifany") #to include NA values in the count
 
 #rows with missing values
